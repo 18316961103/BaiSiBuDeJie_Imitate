@@ -7,25 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1811B0691F628ACD00099781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0681F628ACD00099781 /* main.m */; };
-		1811B06C1F628ACD00099781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B06B1F628ACD00099781 /* AppDelegate.m */; };
-		1811B06F1F628ACD00099781 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B06E1F628ACD00099781 /* ViewController.m */; };
 		1811B0721F628ACD00099781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1811B0701F628ACD00099781 /* Main.storyboard */; };
 		1811B0741F628ACD00099781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1811B0731F628ACD00099781 /* Assets.xcassets */; };
 		1811B0771F628ACD00099781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1811B0751F628ACD00099781 /* LaunchScreen.storyboard */; };
+		1811B0971F629C8B00099781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0911F629C8B00099781 /* AppDelegate.m */; };
+		1811B0981F629C8B00099781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0921F629C8B00099781 /* main.m */; };
+		1811B09B1F629E3900099781 /* EssenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B09A1F629E3900099781 /* EssenseViewController.m */; };
+		1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B09D1F629EAB00099781 /* FriendTrendsViewController.m */; };
+		1811B0A11F629EBA00099781 /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0A01F629EBA00099781 /* MeTableViewController.m */; };
+		1811B0A41F629ECB00099781 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0A31F629ECB00099781 /* NewViewController.m */; };
+		1811B0A71F629ED400099781 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0A61F629ED400099781 /* PublishViewController.m */; };
+		1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0AD1F62AA4700099781 /* TabBarController.m */; };
+		1811B0B21F62AF5E00099781 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0B11F62AF5E00099781 /* UIImage+Image.m */; };
+		1811B0B51F62E00800099781 /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811B0B41F62E00800099781 /* TabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1811B0641F628ACD00099781 /* BaiSiBuDeJie_Imitate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiBuDeJie_Imitate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1811B0681F628ACD00099781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1811B06A1F628ACD00099781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1811B06B1F628ACD00099781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1811B06D1F628ACD00099781 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1811B06E1F628ACD00099781 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1811B0711F628ACD00099781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1811B0731F628ACD00099781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1811B0761F628ACD00099781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1811B0781F628ACD00099781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1811B0901F629C8B00099781 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1811B0911F629C8B00099781 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1811B0921F629C8B00099781 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1811B0991F629E3900099781 /* EssenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenseViewController.h; sourceTree = "<group>"; };
+		1811B09A1F629E3900099781 /* EssenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenseViewController.m; sourceTree = "<group>"; };
+		1811B09C1F629EAB00099781 /* FriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTrendsViewController.h; sourceTree = "<group>"; };
+		1811B09D1F629EAB00099781 /* FriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTrendsViewController.m; sourceTree = "<group>"; };
+		1811B09F1F629EBA00099781 /* MeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewController.h; sourceTree = "<group>"; };
+		1811B0A01F629EBA00099781 /* MeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewController.m; sourceTree = "<group>"; };
+		1811B0A21F629ECB00099781 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		1811B0A31F629ECB00099781 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		1811B0A51F629ED400099781 /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		1811B0A61F629ED400099781 /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		1811B0AC1F62AA4700099781 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		1811B0AD1F62AA4700099781 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		1811B0B01F62AF5E00099781 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		1811B0B11F62AF5E00099781 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		1811B0B31F62E00800099781 /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
+		1811B0B41F62E00800099781 /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +79,7 @@
 		1811B0661F628ACD00099781 /* BaiSiBuDeJie_Imitate */ = {
 			isa = PBXGroup;
 			children = (
-				1811B06A1F628ACD00099781 /* AppDelegate.h */,
-				1811B06B1F628ACD00099781 /* AppDelegate.m */,
-				1811B06D1F628ACD00099781 /* ViewController.h */,
-				1811B06E1F628ACD00099781 /* ViewController.m */,
+				1811B07E1F629C8B00099781 /* Classes */,
 				1811B0701F628ACD00099781 /* Main.storyboard */,
 				1811B0731F628ACD00099781 /* Assets.xcassets */,
 				1811B0751F628ACD00099781 /* LaunchScreen.storyboard */,
@@ -74,9 +92,242 @@
 		1811B0671F628ACD00099781 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1811B0681F628ACD00099781 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1811B07E1F629C8B00099781 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0A81F62A9EF00099781 /* Main(主要) */,
+				1811B08F1F629C8B00099781 /* Other */,
+				1811B07F1F629C8B00099781 /* Essense(精华) */,
+				1811B0831F629C8B00099781 /* FriendTrends(关注) */,
+				1811B0871F629C8B00099781 /* Me(我) */,
+				1811B08B1F629C8B00099781 /* New(新帖) */,
+				1811B0931F629C8B00099781 /* Publish(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1811B07F1F629C8B00099781 /* Essense(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0801F629C8B00099781 /* Controller */,
+				1811B0811F629C8B00099781 /* Model */,
+				1811B0821F629C8B00099781 /* View */,
+			);
+			path = "Essense(精华)";
+			sourceTree = "<group>";
+		};
+		1811B0801F629C8B00099781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0991F629E3900099781 /* EssenseViewController.h */,
+				1811B09A1F629E3900099781 /* EssenseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1811B0811F629C8B00099781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1811B0821F629C8B00099781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1811B0831F629C8B00099781 /* FriendTrends(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0841F629C8B00099781 /* Controller */,
+				1811B0851F629C8B00099781 /* Model */,
+				1811B0861F629C8B00099781 /* View */,
+			);
+			path = "FriendTrends(关注)";
+			sourceTree = "<group>";
+		};
+		1811B0841F629C8B00099781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1811B09C1F629EAB00099781 /* FriendTrendsViewController.h */,
+				1811B09D1F629EAB00099781 /* FriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1811B0851F629C8B00099781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1811B0861F629C8B00099781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1811B0871F629C8B00099781 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0881F629C8B00099781 /* Controller */,
+				1811B0891F629C8B00099781 /* Model */,
+				1811B08A1F629C8B00099781 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		1811B0881F629C8B00099781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1811B09F1F629EBA00099781 /* MeTableViewController.h */,
+				1811B0A01F629EBA00099781 /* MeTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1811B0891F629C8B00099781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1811B08A1F629C8B00099781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1811B08B1F629C8B00099781 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				1811B08C1F629C8B00099781 /* Controller */,
+				1811B08D1F629C8B00099781 /* Model */,
+				1811B08E1F629C8B00099781 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		1811B08C1F629C8B00099781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0A21F629ECB00099781 /* NewViewController.h */,
+				1811B0A31F629ECB00099781 /* NewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1811B08D1F629C8B00099781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1811B08E1F629C8B00099781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1811B08F1F629C8B00099781 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0AF1F62AF5000099781 /* Category */,
+				1811B0901F629C8B00099781 /* AppDelegate.h */,
+				1811B0911F629C8B00099781 /* AppDelegate.m */,
+				1811B0921F629C8B00099781 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1811B0931F629C8B00099781 /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0941F629C8B00099781 /* Controller */,
+				1811B0951F629C8B00099781 /* Model */,
+				1811B0961F629C8B00099781 /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		1811B0941F629C8B00099781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0A51F629ED400099781 /* PublishViewController.h */,
+				1811B0A61F629ED400099781 /* PublishViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1811B0951F629C8B00099781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1811B0961F629C8B00099781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1811B0A81F62A9EF00099781 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0A91F62A9EF00099781 /* Controller */,
+				1811B0AA1F62A9EF00099781 /* Model */,
+				1811B0AB1F62A9EF00099781 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		1811B0A91F62A9EF00099781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0AC1F62AA4700099781 /* TabBarController.h */,
+				1811B0AD1F62AA4700099781 /* TabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1811B0AA1F62A9EF00099781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1811B0AB1F62A9EF00099781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0B31F62E00800099781 /* TabBar.h */,
+				1811B0B41F62E00800099781 /* TabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1811B0AF1F62AF5000099781 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1811B0B01F62AF5E00099781 /* UIImage+Image.h */,
+				1811B0B11F62AF5E00099781 /* UIImage+Image.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +402,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1811B06F1F628ACD00099781 /* ViewController.m in Sources */,
-				1811B06C1F628ACD00099781 /* AppDelegate.m in Sources */,
-				1811B0691F628ACD00099781 /* main.m in Sources */,
+				1811B0A71F629ED400099781 /* PublishViewController.m in Sources */,
+				1811B0A41F629ECB00099781 /* NewViewController.m in Sources */,
+				1811B0981F629C8B00099781 /* main.m in Sources */,
+				1811B0B21F62AF5E00099781 /* UIImage+Image.m in Sources */,
+				1811B0A11F629EBA00099781 /* MeTableViewController.m in Sources */,
+				1811B0B51F62E00800099781 /* TabBar.m in Sources */,
+				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
+				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
+				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
+				1811B09B1F629E3900099781 /* EssenseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

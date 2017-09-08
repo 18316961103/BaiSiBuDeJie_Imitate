@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TabBarController.h
 //  BaiSiBuDeJie_Imitate
 //
 //  Created by apple on 17/9/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TabBarController : UITabBarController
 
 @end
-
