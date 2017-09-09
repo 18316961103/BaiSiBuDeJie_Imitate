@@ -7,6 +7,7 @@
 //
 
 #import "NewViewController.h"
+#import "SubTagTableViewController.h"
 
 @interface NewViewController ()
 
@@ -36,7 +37,9 @@
 #pragma mark - 导航条左边按钮的点击
 - (void)tagClick {
     
-    WYFunc;
+    SubTagTableViewController *subTagVc = [[SubTagTableViewController alloc] init];
+    
+    [self.navigationController pushViewController:subTagVc animated:YES];
     
 }
 

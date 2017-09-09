@@ -54,6 +54,9 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
     if (self.childViewControllers.count > 0) { // 排除根控制器
+        
+        // push的时候隐藏tabBar
+        viewController.hidesBottomBarWhenPushed = YES;
         // 统一设置返回按钮，非根控制器
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"navigationButtonReturn"] highlightImage:[UIImage imageNamed:@"navigationButtonReturnClick"]  target:self action:@selector(backClick) title:@"返回"];
     }

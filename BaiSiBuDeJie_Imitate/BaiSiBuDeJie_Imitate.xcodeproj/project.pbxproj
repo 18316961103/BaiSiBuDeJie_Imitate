@@ -34,6 +34,10 @@
 		1885A3F11F63F7A100FF08DD /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A3EF1F63F7A100FF08DD /* AdViewController.m */; };
 		1885A3F21F63F7A100FF08DD /* AdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A3F01F63F7A100FF08DD /* AdViewController.xib */; };
 		1885A3F51F63FD5C00FF08DD /* AdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A3F41F63FD5C00FF08DD /* AdItem.m */; };
+		1885A3F81F6411C900FF08DD /* SubTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A3F71F6411C900FF08DD /* SubTagTableViewController.m */; };
+		1885A3FB1F64131100FF08DD /* SubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A3FA1F64131100FF08DD /* SubTagItem.m */; };
+		1885A3FF1F64174800FF08DD /* SubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A3FD1F64174800FF08DD /* SubTagCell.m */; };
+		1885A4001F64174800FF08DD /* SubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A3FE1F64174800FF08DD /* SubTagCell.xib */; };
 		C424A458B279E322ABF42C43 /* Pods_BaiSiBuDeJie_Imitate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,13 @@
 		1885A3F01F63F7A100FF08DD /* AdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdViewController.xib; sourceTree = "<group>"; };
 		1885A3F31F63FD5C00FF08DD /* AdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdItem.h; sourceTree = "<group>"; };
 		1885A3F41F63FD5C00FF08DD /* AdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdItem.m; sourceTree = "<group>"; };
+		1885A3F61F6411C900FF08DD /* SubTagTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTagTableViewController.h; sourceTree = "<group>"; };
+		1885A3F71F6411C900FF08DD /* SubTagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTagTableViewController.m; sourceTree = "<group>"; };
+		1885A3F91F64131100FF08DD /* SubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTagItem.h; sourceTree = "<group>"; };
+		1885A3FA1F64131100FF08DD /* SubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTagItem.m; sourceTree = "<group>"; };
+		1885A3FC1F64174800FF08DD /* SubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTagCell.h; sourceTree = "<group>"; };
+		1885A3FD1F64174800FF08DD /* SubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTagCell.m; sourceTree = "<group>"; };
+		1885A3FE1F64174800FF08DD /* SubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubTagCell.xib; sourceTree = "<group>"; };
 		5A47027BA3CCE790F386CCBE /* Pods-BaiSiBuDeJie_Imitate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; sourceTree = "<group>"; };
 		9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiSiBuDeJie_Imitate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6598B2D6145D0C71708AD61 /* Pods-BaiSiBuDeJie_Imitate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +280,8 @@
 			children = (
 				1811B0A21F629ECB00099781 /* NewViewController.h */,
 				1811B0A31F629ECB00099781 /* NewViewController.m */,
+				1885A3F61F6411C900FF08DD /* SubTagTableViewController.h */,
+				1885A3F71F6411C900FF08DD /* SubTagTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +289,8 @@
 		1811B08D1F629C8B00099781 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1885A3F91F64131100FF08DD /* SubTagItem.h */,
+				1885A3FA1F64131100FF08DD /* SubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +298,9 @@
 		1811B08E1F629C8B00099781 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1885A3FC1F64174800FF08DD /* SubTagCell.h */,
+				1885A3FD1F64174800FF08DD /* SubTagCell.m */,
+				1885A3FE1F64174800FF08DD /* SubTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -553,6 +571,7 @@
 				1885A3E21F63F74B00FF08DD /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				1885A3DE1F63F74B00FF08DD /* LaunchImage-568h@2x.png in Resources */,
 				1885A3E11F63F74B00FF08DD /* LaunchImage-800-667h@2x.png in Resources */,
+				1885A4001F64174800FF08DD /* SubTagCell.xib in Resources */,
 				1811B0721F628ACD00099781 /* Main.storyboard in Resources */,
 				1885A3E41F63F74B00FF08DD /* LaunchImage@2x.png in Resources */,
 			);
@@ -615,6 +634,7 @@
 			files = (
 				1811B0A71F629ED400099781 /* PublishViewController.m in Sources */,
 				1885A3F11F63F7A100FF08DD /* AdViewController.m in Sources */,
+				1885A3F81F6411C900FF08DD /* SubTagTableViewController.m in Sources */,
 				1811B0BC1F63936800099781 /* UIBarButtonItem+Item.m in Sources */,
 				1811B0C61F639DAA00099781 /* SettingTableViewController.m in Sources */,
 				1811B0A41F629ECB00099781 /* NewViewController.m in Sources */,
@@ -623,11 +643,13 @@
 				1885A3F51F63FD5C00FF08DD /* AdItem.m in Sources */,
 				1811B0A11F629EBA00099781 /* MeTableViewController.m in Sources */,
 				1811B0B51F62E00800099781 /* TabBar.m in Sources */,
+				1885A3FF1F64174800FF08DD /* SubTagCell.m in Sources */,
 				1811B0BF1F639B0000099781 /* WYNavigationController.m in Sources */,
 				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
 				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
 				1811B09B1F629E3900099781 /* EssenseViewController.m in Sources */,
+				1885A3FB1F64131100FF08DD /* SubTagItem.m in Sources */,
 				1811B0B81F6381F600099781 /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

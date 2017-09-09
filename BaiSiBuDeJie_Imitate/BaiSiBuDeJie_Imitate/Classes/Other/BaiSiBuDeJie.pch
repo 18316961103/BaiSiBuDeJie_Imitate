@@ -18,6 +18,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <MJExtension/MJExtension.h>
 #import "UIImageView+WebCache.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 /*****************第三方库**********************/
 
 /*****************屏幕适配**********************/
@@ -42,3 +43,7 @@
 #endif
 
 #define WYFunc WYLog(@"%s",__func__)
+
+/* RGB颜色 */
+#define Color(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
+

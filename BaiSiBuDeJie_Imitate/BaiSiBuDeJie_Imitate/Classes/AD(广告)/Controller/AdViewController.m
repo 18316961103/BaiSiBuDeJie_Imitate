@@ -50,6 +50,7 @@
     if (i == 0) {
         // 当倒数完毕的时候,跳转到首页
         [self jumpClick:self.jumpBtn];
+
     }
     
     i--;
@@ -136,6 +137,9 @@
 
 #pragma mark - 跳过广告
 - (IBAction)jumpClick:(UIButton *)sender {
+    
+    // 点击跳过广告的时候就要销毁定时器，否则会再次跳转
+    [_timer invalidate];
     
     TabBarController *tabBarC = [[TabBarController alloc] init];
     
