@@ -40,9 +40,7 @@
 - (void)layoutSubviews {
     
     [super layoutSubviews];
-    
-    NSLog(@"%@",self.subviews);
-    
+        
     CGFloat tabBarButtonX = 0;
     CGFloat tabBarButtonW = self.frame.size.width / (self.items.count + 1);
     CGFloat tabBarButtonH = self.frame.size.height;

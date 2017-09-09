@@ -8,7 +8,7 @@
 
 #import "WYNavigationController.h"
 
-@interface WYNavigationController ()
+@interface WYNavigationController () <UIGestureRecognizerDelegate>
 
 @end
 
@@ -28,13 +28,36 @@
     
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // 直接设置代理为自己只能解决边缘滑动返回不了的问题，但是最好的效果的是可以全屏滑动返回，所以使用下面的方法
+//    self.interactivePopGestureRecognizer.delegate = self;
+    
+    // 自定义手势替换系统的边缘手势滑动返回，达到全屏滑动返回的效果
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    // 控制手势什么时候触发，只有非根控制器才能触发手势
+    pan.delegate = self;
+    
+    [self.view addGestureRecognizer:pan];
+    // 禁止系统的边缘手势返回
+    self.interactivePopGestureRecognizer.enabled = NO;
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    
+    // 只有非根控制器才有手势返回的功能，否则会造成程序假死
+    return self.childViewControllers.count > 1;
+    
+}
+
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
     if (self.childViewControllers.count > 0) { // 排除根控制器
         // 统一设置返回按钮，非根控制器
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"navigationButtonReturn"] highlightImage:[UIImage imageNamed:@"navigationButtonReturnClick"]  target:self action:@selector(backClick) title:@"返回"];
     }
-
+    
     [super pushViewController:viewController animated:animated];
     
 }
@@ -44,12 +67,6 @@
     
     [self popViewControllerAnimated:YES];
     
-}
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
