@@ -48,4 +48,28 @@
     return barButtonItem;
 }
 
++ (UIBarButtonItem *)barButtonItemWithImage:(UIImage *)image highlightImage:(UIImage *)highlightImage target:(id)target action:(SEL)action title:(NSString *)title {
+    
+    // 设置返回按钮
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [backBtn setImage:image forState:UIControlStateNormal];
+    [backBtn setImage:highlightImage forState:UIControlStateHighlighted];
+    
+    [backBtn setTitle:title forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    
+    // 让按钮左移
+    backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+    
+    [backBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
+    [backBtn sizeToFit];
+
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    
+    return barButtonItem;
+}
+
 @end

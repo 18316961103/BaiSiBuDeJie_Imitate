@@ -1,0 +1,28 @@
+//
+//  BaiSiBuDeJie.pch
+//  BaiSiBuDeJie_Imitate
+//
+//  Created by apple on 17/9/9.
+//  Copyright © 2017年 wy. All rights reserved.
+//
+
+
+/****************        分类           ********************/
+#import "UIImage+Image.h"
+
+#import "UIView+Frame.h"
+
+#import "UIBarButtonItem+Item.h"
+
+/****************        自定义宏           ********************/
+#ifdef DEBUG // 调试
+
+#define WYLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define WYLog(...)
+
+#endif
+
+#define WYFunc WYLog(@"%s",__func__)
