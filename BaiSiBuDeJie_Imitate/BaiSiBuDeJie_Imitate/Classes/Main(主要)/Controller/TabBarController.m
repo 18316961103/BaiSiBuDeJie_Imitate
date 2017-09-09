@@ -12,8 +12,9 @@
 #import "MeTableViewController.h"
 #import "NewViewController.h"
 #import "PublishViewController.h"
-#import "UIImage+Image.h"
 #import "TabBar.h"
+#import "BaiSiBuDeJie.pch"
+#import "WYNavigationController.h"
 
 @interface TabBarController ()
 
@@ -41,7 +42,7 @@
     fontDict[NSFontAttributeName] = [UIFont systemFontOfSize:13];
     
     [tabbarItem setTitleTextAttributes:fontDict forState:UIControlStateNormal];
-    
+
 }
 
 - (void)viewDidLoad {
@@ -73,13 +74,13 @@
     // 精华
     EssenseViewController *essenseVc = [[EssenseViewController alloc] init];
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:essenseVc];
+    WYNavigationController *nav = [[WYNavigationController alloc] initWithRootViewController:essenseVc];
     
     [self addChildViewController:nav];
     // 新帖
     NewViewController *newVc = [[NewViewController alloc] init];
     
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:newVc];
+    WYNavigationController *nav1 = [[WYNavigationController alloc] initWithRootViewController:newVc];
     
     [self addChildViewController:nav1];
     // 发布
@@ -89,13 +90,13 @@
     // 关注
     FriendTrendsViewController *friendTrendsVc = [[FriendTrendsViewController alloc] init];
     
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:friendTrendsVc];
+    WYNavigationController *nav3 = [[WYNavigationController alloc] initWithRootViewController:friendTrendsVc];
     
     [self addChildViewController:nav3];
     // 我
     MeTableViewController *meTableVc = [[MeTableViewController alloc] init];
     
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:meTableVc];
+    WYNavigationController *nav4 = [[WYNavigationController alloc] initWithRootViewController:meTableVc];
     
     [self addChildViewController:nav4];
 }

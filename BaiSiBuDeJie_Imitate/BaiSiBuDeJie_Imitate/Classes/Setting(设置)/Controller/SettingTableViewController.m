@@ -1,62 +1,32 @@
 //
-//  MeTableViewController.m
+//  SettingTableViewController.m
 //  BaiSiBuDeJie_Imitate
 //
-//  Created by apple on 17/9/8.
+//  Created by apple on 17/9/9.
 //  Copyright © 2017年 wy. All rights reserved.
 //
 
-#import "MeTableViewController.h"
 #import "SettingTableViewController.h"
 
-@interface MeTableViewController ()
+@interface SettingTableViewController ()
 
 @end
 
-@implementation MeTableViewController
+@implementation SettingTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 设置导航条
-    [self setupNavBar];
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-#pragma mark - 设置导航条
-- (void)setupNavBar {
-    
-    // 设置按钮
-    UIBarButtonItem *settingItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highlightImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(settingClick)];
-    // 夜间模式
-    UIBarButtonItem *nightItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selectedImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(nightClick:)];
-
-    // 设置导航条右边的按钮
-    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
-    // 设置导航条标题
-    self.navigationItem.title = @"我的";
-    
-}
-
-#pragma mark - 导航条右边设置按钮的点击
-- (void)settingClick {
-    
-    WYFunc;
-    
-    SettingTableViewController *settingVc = [[SettingTableViewController alloc] init];
-    
-    // 隐藏tabBar 必须在跳转之前设置，否则无效
-    settingVc.hidesBottomBarWhenPushed = YES;
-    
-    [self.navigationController pushViewController:settingVc animated:YES];
-}
-
-#pragma mark - 导航条右边夜间模式按钮的点击
-- (void)nightClick:(UIButton *)button {
-    
-    WYFunc;
-    
-    button.selected = !button.selected;
-    
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source

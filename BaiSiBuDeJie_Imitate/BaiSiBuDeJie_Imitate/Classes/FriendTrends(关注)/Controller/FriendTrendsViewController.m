@@ -16,7 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor greenColor];
+    
+    // 设置导航条
+    [self setupNavBar];
+}
+
+#pragma mark - 设置导航条
+- (void)setupNavBar {
+    
+    // 设置导航条左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highlightImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(friendsRecommentClick)];
+    // 设置导航条标题
+    self.navigationItem.title = @"我的关注";;
+    
+}
+
+#pragma mark - 导航条左边按钮的点击
+- (void)friendsRecommentClick {
+    
+    WYFunc;
+    
 }
 
 - (void)didReceiveMemoryWarning {
