@@ -14,6 +14,14 @@
 
 #import "UIBarButtonItem+Item.h"
 
+/*****************第三方库**********************/
+#import <AFNetworking/AFNetworking.h>
+#import <MJExtension/MJExtension.h>
+#import "UIImageView+WebCache.h"
+/*****************第三方库**********************/
+
+/*****************屏幕适配**********************/
+
 /****************        自定义宏           ********************/
 #ifdef DEBUG // 调试
 

@@ -1,0 +1,6 @@
+framework module Pods_BaiSiBuDeJie_Imitate {
+  umbrella header "Pods-BaiSiBuDeJie_Imitate-umbrella.h"
+
+  export *
+  module * { export * }
+}
