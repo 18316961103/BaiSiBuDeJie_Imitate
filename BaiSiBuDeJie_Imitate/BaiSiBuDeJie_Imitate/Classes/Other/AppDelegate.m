@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarController.h"
+#import "AdViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +24,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
    
     // 2.设置窗口根控制器
-    TabBarController *tabarVc = [[TabBarController alloc] init];
-    self.window.rootViewController = tabarVc;
+//    TabBarController *tabarVc = [[TabBarController alloc] init];
+    
+    AdViewController *adVc = [[AdViewController alloc] init];
+    self.window.rootViewController = adVc;
     
     // 3.显示窗口
     [self.window makeKeyAndVisible];

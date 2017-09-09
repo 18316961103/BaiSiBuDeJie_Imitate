@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdViewController">
+            <connections>
+                <outlet property="adPlaceView" destination="ueA-gc-pZl" id="cqH-Px-vtT"/>
+                <outlet property="jumpBtn" destination="OIw-ig-kOO" id="kZv-M8-HqZ"/>
+                <outlet property="launchImageView" destination="dcb-C8-gKs" id="jTn-k2-FaQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcb-C8-gKs"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueA-gc-pZl">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIw-ig-kOO">
+                    <color key="backgroundColor" red="0.29304766414141414" green="0.29304766414141414" blue="0.29304766414141414" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="BCn-Xp-a7g"/>
+                    </constraints>
+                    <state key="normal" title="跳转 (5)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="jumpClick:" destination="-1" eventType="touchUpInside" id="MiE-lA-NEh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ueA-gc-pZl" secondAttribute="trailing" id="8ap-1o-Yv0"/>
+                <constraint firstItem="ueA-gc-pZl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BRB-9n-yct"/>
+                <constraint firstItem="OIw-ig-kOO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Cg0-9f-erL"/>
+                <constraint firstItem="dcb-C8-gKs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ph9-Op-mjl"/>
+                <constraint firstItem="dcb-C8-gKs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rp8-nt-DM0"/>
+                <constraint firstAttribute="bottom" secondItem="ueA-gc-pZl" secondAttribute="bottom" id="kWE-2f-722"/>
+                <constraint firstItem="ueA-gc-pZl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qo6-nb-lmw"/>
+                <constraint firstAttribute="trailing" secondItem="dcb-C8-gKs" secondAttribute="trailing" id="r2s-0n-aXO"/>
+                <constraint firstAttribute="trailing" secondItem="OIw-ig-kOO" secondAttribute="trailing" constant="20" id="rBQ-XG-tpg"/>
+                <constraint firstAttribute="bottom" secondItem="dcb-C8-gKs" secondAttribute="bottom" id="yec-IQ-T1d"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

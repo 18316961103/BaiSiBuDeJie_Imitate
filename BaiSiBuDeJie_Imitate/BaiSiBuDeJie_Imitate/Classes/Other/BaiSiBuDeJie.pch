@@ -21,6 +21,14 @@
 /*****************第三方库**********************/
 
 /*****************屏幕适配**********************/
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+#define iPhone6p (kScreenH == 736)
+#define iPhone6 (kScreenH == 667)
+#define iPhone5 (kScreenH == 568)
+#define iPhone4 (kScreenH == 480)
+/*****************屏幕适配**********************/
 
 /****************        自定义宏           ********************/
 #ifdef DEBUG // 调试
