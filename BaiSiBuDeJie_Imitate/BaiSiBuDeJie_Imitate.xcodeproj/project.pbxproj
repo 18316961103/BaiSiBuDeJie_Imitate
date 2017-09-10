@@ -39,6 +39,13 @@
 		1885A3FF1F64174800FF08DD /* SubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A3FD1F64174800FF08DD /* SubTagCell.m */; };
 		1885A4001F64174800FF08DD /* SubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A3FE1F64174800FF08DD /* SubTagCell.xib */; };
 		1885A4021F643E0000FF08DD /* FriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A4011F643E0000FF08DD /* FriendTrendsViewController.xib */; };
+		1885A40A1F64EACB00FF08DD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A4081F64EACB00FF08DD /* LoginViewController.m */; };
+		1885A40B1F64EACB00FF08DD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A4091F64EACB00FF08DD /* LoginViewController.xib */; };
+		1885A40E1F64F31700FF08DD /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A40D1F64F31700FF08DD /* LoginView.m */; };
+		1885A4101F64F32700FF08DD /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A40F1F64F32700FF08DD /* LoginView.xib */; };
+		1885A4131F652FFE00FF08DD /* FastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A4121F652FFE00FF08DD /* FastLoginView.m */; };
+		1885A4151F65301D00FF08DD /* FastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A4141F65301D00FF08DD /* FastLoginView.xib */; };
+		1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A4171F65361500FF08DD /* FastLoginBtn.m */; };
 		C424A458B279E322ABF42C43 /* Pods_BaiSiBuDeJie_Imitate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +103,17 @@
 		1885A3FD1F64174800FF08DD /* SubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTagCell.m; sourceTree = "<group>"; };
 		1885A3FE1F64174800FF08DD /* SubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubTagCell.xib; sourceTree = "<group>"; };
 		1885A4011F643E0000FF08DD /* FriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTrendsViewController.xib; sourceTree = "<group>"; };
+		1885A4071F64EACB00FF08DD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1885A4081F64EACB00FF08DD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1885A4091F64EACB00FF08DD /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1885A40C1F64F31700FF08DD /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		1885A40D1F64F31700FF08DD /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		1885A40F1F64F32700FF08DD /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		1885A4111F652FFE00FF08DD /* FastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastLoginView.h; sourceTree = "<group>"; };
+		1885A4121F652FFE00FF08DD /* FastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastLoginView.m; sourceTree = "<group>"; };
+		1885A4141F65301D00FF08DD /* FastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FastLoginView.xib; sourceTree = "<group>"; };
+		1885A4161F65361500FF08DD /* FastLoginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastLoginBtn.h; sourceTree = "<group>"; };
+		1885A4171F65361500FF08DD /* FastLoginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastLoginBtn.m; sourceTree = "<group>"; };
 		5A47027BA3CCE790F386CCBE /* Pods-BaiSiBuDeJie_Imitate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; sourceTree = "<group>"; };
 		9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiSiBuDeJie_Imitate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6598B2D6145D0C71708AD61 /* Pods-BaiSiBuDeJie_Imitate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +173,7 @@
 		1811B07E1F629C8B00099781 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1885A4031F64EAAA00FF08DD /* Login(登陆) */,
 				1885A3E51F63F77600FF08DD /* AD(广告) */,
 				1811B0C01F639D9600099781 /* Setting(设置) */,
 				1811B0A81F62A9EF00099781 /* Main(主要) */,
@@ -486,6 +505,48 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1885A4031F64EAAA00FF08DD /* Login(登陆) */ = {
+			isa = PBXGroup;
+			children = (
+				1885A4041F64EAAA00FF08DD /* Controller */,
+				1885A4051F64EAAA00FF08DD /* Model */,
+				1885A4061F64EAAA00FF08DD /* View */,
+			);
+			path = "Login(登陆)";
+			sourceTree = "<group>";
+		};
+		1885A4041F64EAAA00FF08DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1885A4071F64EACB00FF08DD /* LoginViewController.h */,
+				1885A4081F64EACB00FF08DD /* LoginViewController.m */,
+				1885A4091F64EACB00FF08DD /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1885A4051F64EAAA00FF08DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1885A4061F64EAAA00FF08DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1885A40C1F64F31700FF08DD /* LoginView.h */,
+				1885A40D1F64F31700FF08DD /* LoginView.m */,
+				1885A40F1F64F32700FF08DD /* LoginView.xib */,
+				1885A4111F652FFE00FF08DD /* FastLoginView.h */,
+				1885A4121F652FFE00FF08DD /* FastLoginView.m */,
+				1885A4141F65301D00FF08DD /* FastLoginView.xib */,
+				1885A4161F65361500FF08DD /* FastLoginBtn.h */,
+				1885A4171F65361500FF08DD /* FastLoginBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		771BD41971F5386C0DA1EB61 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,14 +630,17 @@
 				1885A3F21F63F7A100FF08DD /* AdViewController.xib in Resources */,
 				1885A3DF1F63F74B00FF08DD /* LaunchImage-700-568h@2x.png in Resources */,
 				1885A3E31F63F74B00FF08DD /* LaunchImage.png in Resources */,
+				1885A4151F65301D00FF08DD /* FastLoginView.xib in Resources */,
 				1811B0741F628ACD00099781 /* Assets.xcassets in Resources */,
 				1885A3E01F63F74B00FF08DD /* LaunchImage-700@2x.png in Resources */,
 				1885A3E21F63F74B00FF08DD /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				1885A3DE1F63F74B00FF08DD /* LaunchImage-568h@2x.png in Resources */,
+				1885A4101F64F32700FF08DD /* LoginView.xib in Resources */,
 				1885A3E11F63F74B00FF08DD /* LaunchImage-800-667h@2x.png in Resources */,
 				1885A4001F64174800FF08DD /* SubTagCell.xib in Resources */,
 				1885A4021F643E0000FF08DD /* FriendTrendsViewController.xib in Resources */,
 				1811B0721F628ACD00099781 /* Main.storyboard in Resources */,
+				1885A40B1F64EACB00FF08DD /* LoginViewController.xib in Resources */,
 				1885A3E41F63F74B00FF08DD /* LaunchImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,10 +704,13 @@
 				1885A3F11F63F7A100FF08DD /* AdViewController.m in Sources */,
 				1885A3F81F6411C900FF08DD /* SubTagTableViewController.m in Sources */,
 				1811B0BC1F63936800099781 /* UIBarButtonItem+Item.m in Sources */,
+				1885A4131F652FFE00FF08DD /* FastLoginView.m in Sources */,
+				1885A40A1F64EACB00FF08DD /* LoginViewController.m in Sources */,
 				1811B0C61F639DAA00099781 /* SettingTableViewController.m in Sources */,
 				1811B0A41F629ECB00099781 /* NewViewController.m in Sources */,
 				1811B0981F629C8B00099781 /* main.m in Sources */,
 				1811B0B21F62AF5E00099781 /* UIImage+Image.m in Sources */,
+				1885A40E1F64F31700FF08DD /* LoginView.m in Sources */,
 				1885A3F51F63FD5C00FF08DD /* AdItem.m in Sources */,
 				1811B0A11F629EBA00099781 /* MeTableViewController.m in Sources */,
 				1811B0B51F62E00800099781 /* TabBar.m in Sources */,
@@ -651,6 +718,7 @@
 				1811B0BF1F639B0000099781 /* WYNavigationController.m in Sources */,
 				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
+				1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */,
 				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
 				1811B09B1F629E3900099781 /* EssenseViewController.m in Sources */,
 				1885A3FB1F64131100FF08DD /* SubTagItem.m in Sources */,

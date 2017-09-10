@@ -41,6 +41,9 @@
                     <state key="highlighted" backgroundImage="friendsTrend_login_click">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginClick:" destination="-1" eventType="touchUpInside" id="Qoq-Wp-9Qt"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.9187184343" green="0.9187184343" blue="0.9187184343" alpha="1" colorSpace="calibratedRGB"/>

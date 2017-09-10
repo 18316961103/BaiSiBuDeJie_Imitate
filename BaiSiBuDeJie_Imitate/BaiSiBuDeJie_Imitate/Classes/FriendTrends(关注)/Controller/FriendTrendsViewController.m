@@ -7,6 +7,7 @@
 //
 
 #import "FriendTrendsViewController.h"
+#import "LoginViewController.h"
 
 @interface FriendTrendsViewController ()
 
@@ -28,6 +29,15 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highlightImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(friendsRecommentClick)];
     // 设置导航条标题
     self.navigationItem.title = @"我的关注";;
+    
+}
+
+#pragma mark - 点击立即登陆注册
+- (IBAction)loginClick:(UIButton *)sender {
+    
+    LoginViewController *loginVc = [[LoginViewController alloc] init];
+    
+    [self presentViewController:loginVc animated:YES completion:nil];
     
 }
 
