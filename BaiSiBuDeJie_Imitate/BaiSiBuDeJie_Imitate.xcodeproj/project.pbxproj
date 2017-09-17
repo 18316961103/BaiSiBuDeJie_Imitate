@@ -46,6 +46,14 @@
 		1885A4131F652FFE00FF08DD /* FastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A4121F652FFE00FF08DD /* FastLoginView.m */; };
 		1885A4151F65301D00FF08DD /* FastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1885A4141F65301D00FF08DD /* FastLoginView.xib */; };
 		1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885A4171F65361500FF08DD /* FastLoginBtn.m */; };
+		1891DF1F1F6CCDD1008E7037 /* LoginField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891DF1E1F6CCDD1008E7037 /* LoginField.m */; };
+		1891DF221F6CD0E2008E7037 /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891DF211F6CD0E2008E7037 /* UITextField+PlaceHolder.m */; };
+		1891DF241F6CE588008E7037 /* MeTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891DF231F6CE588008E7037 /* MeTableViewController.storyboard */; };
+		1891DF281F6CE9E6008E7037 /* MeSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891DF261F6CE9E6008E7037 /* MeSquareCell.m */; };
+		1891DF291F6CE9E6008E7037 /* MeSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891DF271F6CE9E6008E7037 /* MeSquareCell.xib */; };
+		18BED7AC1F6E216800667521 /* MeSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7AB1F6E216800667521 /* MeSquareItem.m */; };
+		18BED7B01F6E472A00667521 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7AE1F6E472A00667521 /* WebViewController.m */; };
+		18BED7B11F6E472A00667521 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7AF1F6E472A00667521 /* WebViewController.xib */; };
 		C424A458B279E322ABF42C43 /* Pods_BaiSiBuDeJie_Imitate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +122,19 @@
 		1885A4141F65301D00FF08DD /* FastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FastLoginView.xib; sourceTree = "<group>"; };
 		1885A4161F65361500FF08DD /* FastLoginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastLoginBtn.h; sourceTree = "<group>"; };
 		1885A4171F65361500FF08DD /* FastLoginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastLoginBtn.m; sourceTree = "<group>"; };
+		1891DF1D1F6CCDD1008E7037 /* LoginField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginField.h; sourceTree = "<group>"; };
+		1891DF1E1F6CCDD1008E7037 /* LoginField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginField.m; sourceTree = "<group>"; };
+		1891DF201F6CD0E2008E7037 /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
+		1891DF211F6CD0E2008E7037 /* UITextField+PlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceHolder.m"; sourceTree = "<group>"; };
+		1891DF231F6CE588008E7037 /* MeTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeTableViewController.storyboard; sourceTree = "<group>"; };
+		1891DF251F6CE9E6008E7037 /* MeSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquareCell.h; sourceTree = "<group>"; };
+		1891DF261F6CE9E6008E7037 /* MeSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquareCell.m; sourceTree = "<group>"; };
+		1891DF271F6CE9E6008E7037 /* MeSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeSquareCell.xib; sourceTree = "<group>"; };
+		18BED7AA1F6E216800667521 /* MeSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquareItem.h; sourceTree = "<group>"; };
+		18BED7AB1F6E216800667521 /* MeSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquareItem.m; sourceTree = "<group>"; };
+		18BED7AD1F6E472A00667521 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		18BED7AE1F6E472A00667521 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		18BED7AF1F6E472A00667521 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		5A47027BA3CCE790F386CCBE /* Pods-BaiSiBuDeJie_Imitate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; sourceTree = "<group>"; };
 		9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiSiBuDeJie_Imitate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6598B2D6145D0C71708AD61 /* Pods-BaiSiBuDeJie_Imitate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +290,10 @@
 			children = (
 				1811B09F1F629EBA00099781 /* MeTableViewController.h */,
 				1811B0A01F629EBA00099781 /* MeTableViewController.m */,
+				1891DF231F6CE588008E7037 /* MeTableViewController.storyboard */,
+				18BED7AD1F6E472A00667521 /* WebViewController.h */,
+				18BED7AE1F6E472A00667521 /* WebViewController.m */,
+				18BED7AF1F6E472A00667521 /* WebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +301,8 @@
 		1811B0891F629C8B00099781 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18BED7AA1F6E216800667521 /* MeSquareItem.h */,
+				18BED7AB1F6E216800667521 /* MeSquareItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +310,9 @@
 		1811B08A1F629C8B00099781 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1891DF251F6CE9E6008E7037 /* MeSquareCell.h */,
+				1891DF261F6CE9E6008E7037 /* MeSquareCell.m */,
+				1891DF271F6CE9E6008E7037 /* MeSquareCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +448,8 @@
 				1811B0B71F6381F600099781 /* UIView+Frame.m */,
 				1811B0BA1F63936800099781 /* UIBarButtonItem+Item.h */,
 				1811B0BB1F63936800099781 /* UIBarButtonItem+Item.m */,
+				1891DF201F6CD0E2008E7037 /* UITextField+PlaceHolder.h */,
+				1891DF211F6CD0E2008E7037 /* UITextField+PlaceHolder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -543,6 +575,8 @@
 				1885A4141F65301D00FF08DD /* FastLoginView.xib */,
 				1885A4161F65361500FF08DD /* FastLoginBtn.h */,
 				1885A4171F65361500FF08DD /* FastLoginBtn.m */,
+				1891DF1D1F6CCDD1008E7037 /* LoginField.h */,
+				1891DF1E1F6CCDD1008E7037 /* LoginField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -632,13 +666,16 @@
 				1885A3E31F63F74B00FF08DD /* LaunchImage.png in Resources */,
 				1885A4151F65301D00FF08DD /* FastLoginView.xib in Resources */,
 				1811B0741F628ACD00099781 /* Assets.xcassets in Resources */,
+				1891DF241F6CE588008E7037 /* MeTableViewController.storyboard in Resources */,
 				1885A3E01F63F74B00FF08DD /* LaunchImage-700@2x.png in Resources */,
 				1885A3E21F63F74B00FF08DD /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				1885A3DE1F63F74B00FF08DD /* LaunchImage-568h@2x.png in Resources */,
 				1885A4101F64F32700FF08DD /* LoginView.xib in Resources */,
 				1885A3E11F63F74B00FF08DD /* LaunchImage-800-667h@2x.png in Resources */,
 				1885A4001F64174800FF08DD /* SubTagCell.xib in Resources */,
+				18BED7B11F6E472A00667521 /* WebViewController.xib in Resources */,
 				1885A4021F643E0000FF08DD /* FriendTrendsViewController.xib in Resources */,
+				1891DF291F6CE9E6008E7037 /* MeSquareCell.xib in Resources */,
 				1811B0721F628ACD00099781 /* Main.storyboard in Resources */,
 				1885A40B1F64EACB00FF08DD /* LoginViewController.xib in Resources */,
 				1885A3E41F63F74B00FF08DD /* LaunchImage@2x.png in Resources */,
@@ -700,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1891DF221F6CD0E2008E7037 /* UITextField+PlaceHolder.m in Sources */,
 				1811B0A71F629ED400099781 /* PublishViewController.m in Sources */,
 				1885A3F11F63F7A100FF08DD /* AdViewController.m in Sources */,
 				1885A3F81F6411C900FF08DD /* SubTagTableViewController.m in Sources */,
@@ -711,15 +749,19 @@
 				1811B0981F629C8B00099781 /* main.m in Sources */,
 				1811B0B21F62AF5E00099781 /* UIImage+Image.m in Sources */,
 				1885A40E1F64F31700FF08DD /* LoginView.m in Sources */,
+				1891DF281F6CE9E6008E7037 /* MeSquareCell.m in Sources */,
 				1885A3F51F63FD5C00FF08DD /* AdItem.m in Sources */,
 				1811B0A11F629EBA00099781 /* MeTableViewController.m in Sources */,
+				18BED7B01F6E472A00667521 /* WebViewController.m in Sources */,
 				1811B0B51F62E00800099781 /* TabBar.m in Sources */,
 				1885A3FF1F64174800FF08DD /* SubTagCell.m in Sources */,
 				1811B0BF1F639B0000099781 /* WYNavigationController.m in Sources */,
+				18BED7AC1F6E216800667521 /* MeSquareItem.m in Sources */,
 				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
 				1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */,
 				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
+				1891DF1F1F6CCDD1008E7037 /* LoginField.m in Sources */,
 				1811B09B1F629E3900099781 /* EssenseViewController.m in Sources */,
 				1885A3FB1F64131100FF08DD /* SubTagItem.m in Sources */,
 				1811B0B81F6381F600099781 /* UIView+Frame.m in Sources */,

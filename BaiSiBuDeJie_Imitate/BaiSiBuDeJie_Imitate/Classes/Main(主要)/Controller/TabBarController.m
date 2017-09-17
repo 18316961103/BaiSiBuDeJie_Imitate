@@ -93,8 +93,10 @@
     WYNavigationController *nav3 = [[WYNavigationController alloc] initWithRootViewController:friendTrendsVc];
     
     [self addChildViewController:nav3];
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([MeTableViewController class]) bundle:nil];
     // 我
-    MeTableViewController *meTableVc = [[MeTableViewController alloc] init];
+    MeTableViewController *meTableVc = [storyBoard instantiateInitialViewController];
     
     WYNavigationController *nav4 = [[WYNavigationController alloc] initWithRootViewController:meTableVc];
     
