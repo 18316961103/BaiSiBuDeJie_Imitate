@@ -109,7 +109,7 @@ static NSInteger const margin = 1;
     // 发送请求
     [mgr GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        WYLog(@"%@",responseObject);
+//        WYLog(@"%@",responseObject);
         
         self.dataArray = [MeSquareItem mj_objectArrayWithKeyValuesArray:[responseObject objectForKey:@"square_list"]];
         

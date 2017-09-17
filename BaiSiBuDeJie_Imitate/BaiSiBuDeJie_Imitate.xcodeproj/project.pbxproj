@@ -54,6 +54,7 @@
 		18BED7AC1F6E216800667521 /* MeSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7AB1F6E216800667521 /* MeSquareItem.m */; };
 		18BED7B01F6E472A00667521 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7AE1F6E472A00667521 /* WebViewController.m */; };
 		18BED7B11F6E472A00667521 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7AF1F6E472A00667521 /* WebViewController.xib */; };
+		18BED7B61F6E9ECB00667521 /* WYFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7B51F6E9ECB00667521 /* WYFileTool.m */; };
 		C424A458B279E322ABF42C43 /* Pods_BaiSiBuDeJie_Imitate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,8 @@
 		18BED7AD1F6E472A00667521 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		18BED7AE1F6E472A00667521 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		18BED7AF1F6E472A00667521 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		18BED7B41F6E9ECB00667521 /* WYFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYFileTool.h; sourceTree = "<group>"; };
+		18BED7B51F6E9ECB00667521 /* WYFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYFileTool.m; sourceTree = "<group>"; };
 		5A47027BA3CCE790F386CCBE /* Pods-BaiSiBuDeJie_Imitate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; sourceTree = "<group>"; };
 		9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiSiBuDeJie_Imitate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6598B2D6145D0C71708AD61 /* Pods-BaiSiBuDeJie_Imitate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +197,7 @@
 		1811B07E1F629C8B00099781 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18BED7B21F6E64FC00667521 /* Tools */,
 				1885A4031F64EAAA00FF08DD /* Login(登陆) */,
 				1885A3E51F63F77600FF08DD /* AD(广告) */,
 				1811B0C01F639D9600099781 /* Setting(设置) */,
@@ -581,6 +585,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		18BED7B21F6E64FC00667521 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				18BED7B31F6E64FC00667521 /* File */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		18BED7B31F6E64FC00667521 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				18BED7B41F6E9ECB00667521 /* WYFileTool.h */,
+				18BED7B51F6E9ECB00667521 /* WYFileTool.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 		771BD41971F5386C0DA1EB61 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +781,7 @@
 				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
 				1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */,
+				18BED7B61F6E9ECB00667521 /* WYFileTool.m in Sources */,
 				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
 				1891DF1F1F6CCDD1008E7037 /* LoginField.m in Sources */,
 				1811B09B1F629E3900099781 /* EssenseViewController.m in Sources */,

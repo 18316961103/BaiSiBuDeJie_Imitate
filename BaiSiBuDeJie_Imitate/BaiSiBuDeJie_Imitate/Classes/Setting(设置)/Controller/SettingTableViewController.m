@@ -7,16 +7,39 @@
 //
 
 #import "SettingTableViewController.h"
+#import "WYFileTool.h"
+
+#define CachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
 @interface SettingTableViewController ()
+
+/**    缓存大小    */
+@property (assign, nonatomic) NSInteger totalSize;
 
 @end
 
 @implementation SettingTableViewController
 
+static NSString *const ID = @"cell";
+
 - (void)viewDidLoad {
+   
     [super viewDidLoad];
     
+    // 注册cell
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+    
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
+    // 计算缓存大小
+    [WYFileTool getFileSize:CachePath completion:^(NSInteger totalSize) {
+        
+        _totalSize = totalSize;
+        
+        [self.tableView reloadData];
+        
+    }];
+
 }
 
 
@@ -27,25 +50,55 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 2;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];;
     
-    // Configure the cell...
+    if (indexPath.row == 0) {
+        cell.textLabel.text = [self sizeString];;
+    } else {
+        cell.textLabel.text = @"联系我们";
+    }
     
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 0) { // 清除缓存
+        
+        [WYFileTool removeDirectoryPath:CachePath];
+        // 清除缓存的时候要把totalSize清零
+        _totalSize = 0;
+        
+        // 删除后刷新
+        [self.tableView reloadData];
+    }
+    
+}
+
+#pragma mark - 计算缓存尺寸
+- (NSString *)sizeString {
+    
+    NSString *sizeStr = @"清除缓存";
+    
+    if (self.totalSize > 1000 * 1000) {
+        sizeStr = [NSString stringWithFormat:@"%@(%.1fMB)",sizeStr,self.totalSize / 1000.0 / 1000.0];
+    } else if (self.totalSize > 1000) {
+        sizeStr = [NSString stringWithFormat:@"%@(%.1fKB)",sizeStr,self.totalSize / 1000.0];
+    } else if (self.totalSize > 0) {
+        sizeStr = [NSString stringWithFormat:@"%@(%zdB)",sizeStr,self.totalSize];
+    }
+    
+    return sizeStr;
+}
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
