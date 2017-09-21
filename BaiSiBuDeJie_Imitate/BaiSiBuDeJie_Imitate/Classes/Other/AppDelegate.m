@@ -32,7 +32,8 @@
     // 3.显示窗口
     [self.window makeKeyAndVisible];
     
-    
+    // 开始网络监控,必须先调用startMonitoring方法
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
     return YES;
 }

@@ -185,7 +185,7 @@ static NSString *const TopicCellID = @"TopicCellID";
     
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
-    parameters[@"type"] = @"1";
+    parameters[@"type"] = @"10";
 
     
     [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -255,7 +255,7 @@ static NSString *const TopicCellID = @"TopicCellID";
     
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
-    parameters[@"type"] = @"1";
+    parameters[@"type"] = @"10";
     parameters[@"maxtime"] = self.maxtime;
 
     [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -302,19 +302,11 @@ static NSString *const TopicCellID = @"TopicCellID";
     
     TopicItem *item = self.topicData[indexPath.row];
     
-    CGFloat cellHeight = 0;
-    
-    cellHeight += 60;
-    
-    cellHeight += [item.text sizeWithFont:[UIFont systemFontOfSize:15] constrainedToSize:CGSizeMake(kScreenW - 20, MAXFLOAT)].height + 10;
-
-    cellHeight += 40 + 10;
-    
-    return cellHeight;
+    return item.cellHeight;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    // 如果没有数据，隐藏底部加载
     self.footerView.hidden = (self.topicData.count == 0);
     
     return self.topicData.count;
@@ -343,6 +335,9 @@ static NSString *const TopicCellID = @"TopicCellID";
     
     // 处理底部加载
     [self dealFooter];
+    
+    // 清除缓存
+    [[SDImageCache sharedImageCache] clearMemory];
 
 }
 

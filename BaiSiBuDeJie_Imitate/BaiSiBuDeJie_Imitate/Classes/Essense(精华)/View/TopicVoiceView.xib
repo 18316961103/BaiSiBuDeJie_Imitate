@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopicVoiceView">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NIJ-AP-WhC"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-bq-0p1">
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                    <state key="highlighted" backgroundImage="playButtonClick"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAh-PJ-40B">
+                    <color key="backgroundColor" red="0.0095683396464646409" green="0.0095683396464646409" blue="0.0095683396464646409" alpha="0.44045608108108109" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSu-sU-uv1">
+                    <color key="backgroundColor" white="0.0" alpha="0.46014569256756754" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.75439946338181818" green="0.75439946338181818" blue="0.75439946338181818" alpha="0.26488597972972971" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Xeu-bq-0p1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="C57-Bb-iK3"/>
+                <constraint firstItem="NIJ-AP-WhC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IVF-GQ-U6Y"/>
+                <constraint firstItem="MAh-PJ-40B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="IxF-uf-fnH"/>
+                <constraint firstItem="Xeu-bq-0p1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P9N-ZM-FSq"/>
+                <constraint firstAttribute="bottom" secondItem="NIJ-AP-WhC" secondAttribute="bottom" id="VIR-u8-vN9"/>
+                <constraint firstAttribute="trailing" secondItem="NIJ-AP-WhC" secondAttribute="trailing" id="hQi-QN-WRm"/>
+                <constraint firstAttribute="trailing" secondItem="MAh-PJ-40B" secondAttribute="trailing" constant="10" id="jsr-ni-6c9"/>
+                <constraint firstItem="NIJ-AP-WhC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="neO-hI-suT"/>
+                <constraint firstAttribute="bottom" secondItem="BSu-sU-uv1" secondAttribute="bottom" constant="10" id="ryC-Gg-WZ4"/>
+                <constraint firstAttribute="trailing" secondItem="BSu-sU-uv1" secondAttribute="trailing" constant="10" id="xv3-Dm-awp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="NIJ-AP-WhC" id="9tZ-PM-1Wl"/>
+                <outlet property="playCountLabel" destination="MAh-PJ-40B" id="0CD-yw-u4X"/>
+                <outlet property="voiceTimeLabel" destination="BSu-sU-uv1" id="4Dw-EL-ym0"/>
+            </connections>
+            <point key="canvasLocation" x="-0.5" y="289.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonClick" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
+</document>

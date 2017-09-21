@@ -9,10 +9,9 @@
 
 /****************        分类           ********************/
 #import "UIImage+Image.h"
-
 #import "UIView+Frame.h"
-
 #import "UIBarButtonItem+Item.h"
+#import "UIImageView+Download.h"
 /****************        分类           ********************/
 
 /****************        自定义工具类           ********************/

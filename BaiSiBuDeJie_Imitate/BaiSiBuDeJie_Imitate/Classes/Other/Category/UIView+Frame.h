@@ -19,4 +19,9 @@
 @property (assign, nonatomic) CGFloat centerX;
 @property (assign, nonatomic) CGFloat centerY;
 
+/**
+ * 从xib加载UIView
+ */
++ (instancetype)loadViewFromXib;
+
 @end
