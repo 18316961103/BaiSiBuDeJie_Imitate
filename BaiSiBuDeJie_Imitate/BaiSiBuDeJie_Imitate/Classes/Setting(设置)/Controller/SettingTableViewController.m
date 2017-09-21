@@ -42,6 +42,13 @@ static NSString *const ID = @"cell";
 
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear:animated];
+    
+    [SVProgressHUD dismiss];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -74,6 +81,11 @@ static NSString *const ID = @"cell";
         [WYFileTool removeDirectoryPath:CachePath];
         // 清除缓存的时候要把totalSize清零
         _totalSize = 0;
+        
+        [SVProgressHUD showSuccessWithStatus:@"清除缓存成功"];
+        [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+        
+//        [SVProgressHUD showSuccessWithStatus:@"清除缓存成功" maskType:SVProgressHUDMaskTypeBlack];
         
         // 删除后刷新
         [self.tableView reloadData];

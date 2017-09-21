@@ -31,22 +31,11 @@
     
     _item = item;
     
-    [_headImageView sd_setImageWithURL:[NSURL URLWithString:_item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] options:SDWebImageCacheMemoryOnly completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    [_headImageView sd_setImageWithURL:[NSURL URLWithString:_item.image_list] placeholderImage:[UIImage circleImageWithImage:[UIImage imageNamed:@"defaultUserIcon"]] options:SDWebImageCacheMemoryOnly completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        // 如果图片下载失败，就直接返回，不做处理
+        if (image == nil) return ;
         
-        // 最后一个参数scale：比例因数，点与像素的比例，0会自适配
-        UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
-        // 描述裁剪区域
-        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-        // 设置裁剪区域
-        [bezierPath addClip];
-        // 画图片
-        [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-        // 获取裁剪后的图片
-        image = UIGraphicsGetImageFromCurrentImageContext();
-        // 关闭上下文
-        UIGraphicsEndImageContext();
-        
-        _headImageView.image = image;
+        _headImageView.image = [UIImage circleImageWithImage:image];
         
     }];
 

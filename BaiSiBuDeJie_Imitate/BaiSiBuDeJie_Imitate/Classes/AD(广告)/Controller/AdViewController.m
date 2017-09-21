@@ -121,6 +121,9 @@
         
         _item = [AdItem mj_objectWithKeyValues:[dataDict[@"ad"] lastObject]];
         
+        // 如果后台没返回广告数据，则直接返回，不继续处理
+        if (_item == nil) return;
+        
         // 将图片按比例拉伸
         CGFloat adH = kScreenW / _item.w * _item.h;
         

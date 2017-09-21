@@ -10,4 +10,7 @@
 
 @interface TabBar : UITabBar
 
+/**    上一次点击的tabBarButton    */
+@property (strong, nonatomic) UIControl *previousTabBarButton;
+
 @end

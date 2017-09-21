@@ -13,6 +13,11 @@
 #import "UIView+Frame.h"
 
 #import "UIBarButtonItem+Item.h"
+/****************        分类           ********************/
+
+/****************        自定义工具类           ********************/
+#import "WYConst.h"
+/****************        自定义工具类           ********************/
 
 /*****************第三方库**********************/
 #import <AFNetworking/AFNetworking.h>
@@ -46,4 +51,5 @@
 
 /* RGB颜色 */
 #define Color(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
-
+/* 随机颜色 */
+#define RandomColor Color(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))

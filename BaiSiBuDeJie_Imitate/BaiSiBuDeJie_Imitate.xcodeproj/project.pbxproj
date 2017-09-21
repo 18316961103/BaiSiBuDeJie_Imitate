@@ -55,6 +55,15 @@
 		18BED7B01F6E472A00667521 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7AE1F6E472A00667521 /* WebViewController.m */; };
 		18BED7B11F6E472A00667521 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7AF1F6E472A00667521 /* WebViewController.xib */; };
 		18BED7B61F6E9ECB00667521 /* WYFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7B51F6E9ECB00667521 /* WYFileTool.m */; };
+		18BED7B91F6F5D9000667521 /* AllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7B81F6F5D9000667521 /* AllTableViewController.m */; };
+		18BED7BC1F6F5D9E00667521 /* VideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7BB1F6F5D9E00667521 /* VideoTableViewController.m */; };
+		18BED7BF1F6F5DAE00667521 /* VoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7BE1F6F5DAE00667521 /* VoiceTableViewController.m */; };
+		18BED7C21F6F5DBC00667521 /* PictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7C11F6F5DBC00667521 /* PictureTableViewController.m */; };
+		18BED7C51F6F5DC500667521 /* WordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7C41F6F5DC500667521 /* WordTableViewController.m */; };
+		18BED7C81F6F646000667521 /* WYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7C71F6F646000667521 /* WYConst.m */; };
+		18BED7CB1F713D6A00667521 /* TopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7CA1F713D6A00667521 /* TopicItem.m */; };
+		18BED7CE1F72890300667521 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BED7CD1F72890300667521 /* TopicCell.m */; };
+		18BED7DC1F729E1E00667521 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7DB1F729E1E00667521 /* TopicCell.xib */; };
 		C424A458B279E322ABF42C43 /* Pods_BaiSiBuDeJie_Imitate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +147,23 @@
 		18BED7AF1F6E472A00667521 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		18BED7B41F6E9ECB00667521 /* WYFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYFileTool.h; sourceTree = "<group>"; };
 		18BED7B51F6E9ECB00667521 /* WYFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYFileTool.m; sourceTree = "<group>"; };
+		18BED7B71F6F5D9000667521 /* AllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTableViewController.h; sourceTree = "<group>"; };
+		18BED7B81F6F5D9000667521 /* AllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTableViewController.m; sourceTree = "<group>"; };
+		18BED7BA1F6F5D9E00667521 /* VideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewController.h; sourceTree = "<group>"; };
+		18BED7BB1F6F5D9E00667521 /* VideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewController.m; sourceTree = "<group>"; };
+		18BED7BD1F6F5DAE00667521 /* VoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTableViewController.h; sourceTree = "<group>"; };
+		18BED7BE1F6F5DAE00667521 /* VoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTableViewController.m; sourceTree = "<group>"; };
+		18BED7C01F6F5DBC00667521 /* PictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureTableViewController.h; sourceTree = "<group>"; };
+		18BED7C11F6F5DBC00667521 /* PictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTableViewController.m; sourceTree = "<group>"; };
+		18BED7C31F6F5DC500667521 /* WordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewController.h; sourceTree = "<group>"; };
+		18BED7C41F6F5DC500667521 /* WordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewController.m; sourceTree = "<group>"; };
+		18BED7C61F6F646000667521 /* WYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYConst.h; sourceTree = "<group>"; };
+		18BED7C71F6F646000667521 /* WYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYConst.m; sourceTree = "<group>"; };
+		18BED7C91F713D6A00667521 /* TopicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicItem.h; sourceTree = "<group>"; };
+		18BED7CA1F713D6A00667521 /* TopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicItem.m; sourceTree = "<group>"; };
+		18BED7CC1F72890300667521 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
+		18BED7CD1F72890300667521 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
+		18BED7DB1F729E1E00667521 /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		5A47027BA3CCE790F386CCBE /* Pods-BaiSiBuDeJie_Imitate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; sourceTree = "<group>"; };
 		9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiSiBuDeJie_Imitate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6598B2D6145D0C71708AD61 /* Pods-BaiSiBuDeJie_Imitate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +253,16 @@
 			children = (
 				1811B0991F629E3900099781 /* EssenseViewController.h */,
 				1811B09A1F629E3900099781 /* EssenseViewController.m */,
+				18BED7B71F6F5D9000667521 /* AllTableViewController.h */,
+				18BED7B81F6F5D9000667521 /* AllTableViewController.m */,
+				18BED7BA1F6F5D9E00667521 /* VideoTableViewController.h */,
+				18BED7BB1F6F5D9E00667521 /* VideoTableViewController.m */,
+				18BED7BD1F6F5DAE00667521 /* VoiceTableViewController.h */,
+				18BED7BE1F6F5DAE00667521 /* VoiceTableViewController.m */,
+				18BED7C01F6F5DBC00667521 /* PictureTableViewController.h */,
+				18BED7C11F6F5DBC00667521 /* PictureTableViewController.m */,
+				18BED7C31F6F5DC500667521 /* WordTableViewController.h */,
+				18BED7C41F6F5DC500667521 /* WordTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +270,8 @@
 		1811B0811F629C8B00099781 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18BED7C91F713D6A00667521 /* TopicItem.h */,
+				18BED7CA1F713D6A00667521 /* TopicItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +279,9 @@
 		1811B0821F629C8B00099781 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18BED7CC1F72890300667521 /* TopicCell.h */,
+				18BED7CD1F72890300667521 /* TopicCell.m */,
+				18BED7DB1F729E1E00667521 /* TopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -369,6 +410,8 @@
 				1811B0911F629C8B00099781 /* AppDelegate.m */,
 				1811B0921F629C8B00099781 /* main.m */,
 				1811B0B91F63859500099781 /* BaiSiBuDeJie.pch */,
+				18BED7C61F6F646000667521 /* WYConst.h */,
+				18BED7C71F6F646000667521 /* WYConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -698,6 +741,7 @@
 				1885A4021F643E0000FF08DD /* FriendTrendsViewController.xib in Resources */,
 				1891DF291F6CE9E6008E7037 /* MeSquareCell.xib in Resources */,
 				1811B0721F628ACD00099781 /* Main.storyboard in Resources */,
+				18BED7DC1F729E1E00667521 /* TopicCell.xib in Resources */,
 				1885A40B1F64EACB00FF08DD /* LoginViewController.xib in Resources */,
 				1885A3E41F63F74B00FF08DD /* LaunchImage@2x.png in Resources */,
 			);
@@ -758,6 +802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BED7CE1F72890300667521 /* TopicCell.m in Sources */,
 				1891DF221F6CD0E2008E7037 /* UITextField+PlaceHolder.m in Sources */,
 				1811B0A71F629ED400099781 /* PublishViewController.m in Sources */,
 				1885A3F11F63F7A100FF08DD /* AdViewController.m in Sources */,
@@ -765,6 +810,9 @@
 				1811B0BC1F63936800099781 /* UIBarButtonItem+Item.m in Sources */,
 				1885A4131F652FFE00FF08DD /* FastLoginView.m in Sources */,
 				1885A40A1F64EACB00FF08DD /* LoginViewController.m in Sources */,
+				18BED7C81F6F646000667521 /* WYConst.m in Sources */,
+				18BED7C21F6F5DBC00667521 /* PictureTableViewController.m in Sources */,
+				18BED7B91F6F5D9000667521 /* AllTableViewController.m in Sources */,
 				1811B0C61F639DAA00099781 /* SettingTableViewController.m in Sources */,
 				1811B0A41F629ECB00099781 /* NewViewController.m in Sources */,
 				1811B0981F629C8B00099781 /* main.m in Sources */,
@@ -775,12 +823,16 @@
 				1811B0A11F629EBA00099781 /* MeTableViewController.m in Sources */,
 				18BED7B01F6E472A00667521 /* WebViewController.m in Sources */,
 				1811B0B51F62E00800099781 /* TabBar.m in Sources */,
+				18BED7BF1F6F5DAE00667521 /* VoiceTableViewController.m in Sources */,
 				1885A3FF1F64174800FF08DD /* SubTagCell.m in Sources */,
 				1811B0BF1F639B0000099781 /* WYNavigationController.m in Sources */,
 				18BED7AC1F6E216800667521 /* MeSquareItem.m in Sources */,
 				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
+				18BED7BC1F6F5D9E00667521 /* VideoTableViewController.m in Sources */,
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
 				1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */,
+				18BED7CB1F713D6A00667521 /* TopicItem.m in Sources */,
+				18BED7C51F6F5DC500667521 /* WordTableViewController.m in Sources */,
 				18BED7B61F6E9ECB00667521 /* WYFileTool.m in Sources */,
 				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
 				1891DF1F1F6CCDD1008E7037 /* LoginField.m in Sources */,
