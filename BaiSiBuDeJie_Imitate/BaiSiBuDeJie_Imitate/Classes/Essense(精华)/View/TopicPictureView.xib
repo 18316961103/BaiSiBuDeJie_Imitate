@@ -25,6 +25,9 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                     <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
                     <state key="highlighted" image="see-big-picture"/>
+                    <connections>
+                        <action selector="seeBigButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="UXE-DJ-TWe"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>

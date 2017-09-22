@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopicTableViewController.h"
 
-@interface VoiceTableViewController : UITableViewController
+@interface VoiceTableViewController : TopicTableViewController
 
 @end

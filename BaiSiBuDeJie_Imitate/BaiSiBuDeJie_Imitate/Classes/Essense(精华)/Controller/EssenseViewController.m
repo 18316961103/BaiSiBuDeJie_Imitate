@@ -34,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = Color(234, 234, 234);
     
     // 设置导航条
     [self setupNavBar];
@@ -90,7 +90,7 @@
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     
-    scrollView.backgroundColor = [UIColor greenColor];
+    scrollView.backgroundColor = Color(234, 234, 234);
     // 设置分页
     scrollView.pagingEnabled = YES;
     // 隐藏垂直滚动条

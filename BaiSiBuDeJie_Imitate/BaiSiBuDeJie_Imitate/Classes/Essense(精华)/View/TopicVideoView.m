@@ -8,6 +8,7 @@
 
 #import "TopicVideoView.h"
 #import "TopicItem.h"
+#import "SeeBigPictureViewController.h"
 
 @interface TopicVideoView ()
 
@@ -24,6 +25,21 @@
     [super awakeFromNib];
 
     self.autoresizingMask = UIViewAutoresizingNone;
+    
+    self.imageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBigPicture)];
+    
+    [self.imageView addGestureRecognizer:tap];
+}
+
+#pragma mark - 点击查看大图
+- (void)seeBigPicture {
+    
+    SeeBigPictureViewController *seeBigPictureVc = [[SeeBigPictureViewController alloc] init];
+    
+    seeBigPictureVc.topicItem = self.item;
+    
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeBigPictureVc animated:YES completion:nil];
     
 }
 

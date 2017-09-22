@@ -71,6 +71,9 @@
 		18BED7E91F737C8700667521 /* TopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7E81F737C8700667521 /* TopicVoiceView.xib */; };
 		18BED7EB1F737C8F00667521 /* TopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7EA1F737C8F00667521 /* TopicPictureView.xib */; };
 		18D4D30E1F73B8E900AC20B7 /* UIImageView+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4D30D1F73B8E900AC20B7 /* UIImageView+Download.m */; };
+		18D4D3121F74920F00AC20B7 /* SeeBigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4D3101F74920F00AC20B7 /* SeeBigPictureViewController.m */; };
+		18D4D3131F74920F00AC20B7 /* SeeBigPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D4D3111F74920F00AC20B7 /* SeeBigPictureViewController.xib */; };
+		18D4D3161F753CFF00AC20B7 /* TopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4D3151F753CFF00AC20B7 /* TopicTableViewController.m */; };
 		C424A458B279E322ABF42C43 /* Pods_BaiSiBuDeJie_Imitate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +185,11 @@
 		18BED7EA1F737C8F00667521 /* TopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicPictureView.xib; sourceTree = "<group>"; };
 		18D4D30C1F73B8E900AC20B7 /* UIImageView+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Download.h"; sourceTree = "<group>"; };
 		18D4D30D1F73B8E900AC20B7 /* UIImageView+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Download.m"; sourceTree = "<group>"; };
+		18D4D30F1F74920F00AC20B7 /* SeeBigPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeBigPictureViewController.h; sourceTree = "<group>"; };
+		18D4D3101F74920F00AC20B7 /* SeeBigPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeBigPictureViewController.m; sourceTree = "<group>"; };
+		18D4D3111F74920F00AC20B7 /* SeeBigPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeBigPictureViewController.xib; sourceTree = "<group>"; };
+		18D4D3141F753CFF00AC20B7 /* TopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicTableViewController.h; sourceTree = "<group>"; };
+		18D4D3151F753CFF00AC20B7 /* TopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTableViewController.m; sourceTree = "<group>"; };
 		5A47027BA3CCE790F386CCBE /* Pods-BaiSiBuDeJie_Imitate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.release.xcconfig"; sourceTree = "<group>"; };
 		9310292C6789B9141A5947B0 /* Pods_BaiSiBuDeJie_Imitate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiSiBuDeJie_Imitate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6598B2D6145D0C71708AD61 /* Pods-BaiSiBuDeJie_Imitate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie_Imitate/Pods-BaiSiBuDeJie_Imitate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +279,8 @@
 			children = (
 				1811B0991F629E3900099781 /* EssenseViewController.h */,
 				1811B09A1F629E3900099781 /* EssenseViewController.m */,
+				18D4D3141F753CFF00AC20B7 /* TopicTableViewController.h */,
+				18D4D3151F753CFF00AC20B7 /* TopicTableViewController.m */,
 				18BED7B71F6F5D9000667521 /* AllTableViewController.h */,
 				18BED7B81F6F5D9000667521 /* AllTableViewController.m */,
 				18BED7BA1F6F5D9E00667521 /* VideoTableViewController.h */,
@@ -281,6 +291,9 @@
 				18BED7C11F6F5DBC00667521 /* PictureTableViewController.m */,
 				18BED7C31F6F5DC500667521 /* WordTableViewController.h */,
 				18BED7C41F6F5DC500667521 /* WordTableViewController.m */,
+				18D4D30F1F74920F00AC20B7 /* SeeBigPictureViewController.h */,
+				18D4D3101F74920F00AC20B7 /* SeeBigPictureViewController.m */,
+				18D4D3111F74920F00AC20B7 /* SeeBigPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -771,6 +784,7 @@
 				18BED7B11F6E472A00667521 /* WebViewController.xib in Resources */,
 				1885A4021F643E0000FF08DD /* FriendTrendsViewController.xib in Resources */,
 				1891DF291F6CE9E6008E7037 /* MeSquareCell.xib in Resources */,
+				18D4D3131F74920F00AC20B7 /* SeeBigPictureViewController.xib in Resources */,
 				1811B0721F628ACD00099781 /* Main.storyboard in Resources */,
 				18BED7DC1F729E1E00667521 /* TopicCell.xib in Resources */,
 				1885A40B1F64EACB00FF08DD /* LoginViewController.xib in Resources */,
@@ -845,6 +859,7 @@
 				1885A4131F652FFE00FF08DD /* FastLoginView.m in Sources */,
 				1885A40A1F64EACB00FF08DD /* LoginViewController.m in Sources */,
 				18BED7C81F6F646000667521 /* WYConst.m in Sources */,
+				18D4D3161F753CFF00AC20B7 /* TopicTableViewController.m in Sources */,
 				18BED7C21F6F5DBC00667521 /* PictureTableViewController.m in Sources */,
 				18BED7B91F6F5D9000667521 /* AllTableViewController.m in Sources */,
 				1811B0C61F639DAA00099781 /* SettingTableViewController.m in Sources */,
@@ -864,6 +879,7 @@
 				18BED7E51F737C6C00667521 /* TopicPictureView.m in Sources */,
 				1811B0971F629C8B00099781 /* AppDelegate.m in Sources */,
 				18BED7BC1F6F5D9E00667521 /* VideoTableViewController.m in Sources */,
+				18D4D3121F74920F00AC20B7 /* SeeBigPictureViewController.m in Sources */,
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
 				1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */,
 				18BED7CB1F713D6A00667521 /* TopicItem.m in Sources */,

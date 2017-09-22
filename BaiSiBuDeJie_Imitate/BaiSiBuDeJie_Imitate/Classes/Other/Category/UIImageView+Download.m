@@ -28,10 +28,13 @@
     
     if (originImage) { // 原图已经下载过
        
-        self.image = originImage;
-        
-        completedBlock(originImage,nil,0,[NSURL URLWithString:originImageUrl]);
-        
+        // 不能直接设置图片，防止cell循环引起图片错乱，因为如果当前图片还没下载完，但是当前cell又进入了缓存池，重新显示的时候，会显示新的图片，但是如果这时候之前的图片的下载完了，就会覆盖了新的图片
+//        self.image = originImage;
+//        
+//        completedBlock(originImage,nil,0,[NSURL URLWithString:originImageUrl]);
+        // 使用SDWebImage设置图片，就会把之前的下载请求取消，所以就不会引起图片覆盖错乱的问题
+        [self sd_setImageWithURL:[NSURL URLWithString:originImageUrl] placeholderImage:placeholderImage completed:completedBlock];
+
     } else { // 原图没有被下载过
         
         if (manager.isReachableViaWiFi) { // WiFi状态下，加载原图
@@ -47,12 +50,19 @@
             UIImage *thumbnailImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:thumbnailImageUrl];
             
             if (thumbnailImage) { // 有加载过缩略图直接显示
-                self.image = thumbnailImage;
+                // 不能直接设置图片，防止cell循环引起图片错乱，因为如果当前图片还没下载完，但是当前cell又进入了缓存池，重新显示的时候，会显示新的图片，但是如果这时候之前的图片的下载完了，就会覆盖了新的图片
+//                self.image = thumbnailImage;
+//                
+//                completedBlock(thumbnailImage,nil,0,[NSURL URLWithString:thumbnailImageUrl]);
                 
-                completedBlock(thumbnailImage,nil,0,[NSURL URLWithString:thumbnailImageUrl]);
-                
+                [self sd_setImageWithURL:[NSURL URLWithString:thumbnailImageUrl] placeholderImage:placeholderImage completed:completedBlock];
+
             } else { // 没有加载过就显示占位图
-                self.image = placeholderImage;
+                
+//                self.image = placeholderImage;
+                
+                [self sd_setImageWithURL:nil placeholderImage:placeholderImage completed:completedBlock];
+
             }
         }
     }
