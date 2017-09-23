@@ -1013,6 +1013,7 @@
 				DEVELOPMENT_TEAM = SD98S35TWD;
 				GCC_PREFIX_HEADER = BaiSiBuDeJie_Imitate/Classes/Other/BaiSiBuDeJie.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie_Imitate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apple.BaiSiBuDeJie-Imitate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1028,6 +1029,7 @@
 				DEVELOPMENT_TEAM = SD98S35TWD;
 				GCC_PREFIX_HEADER = BaiSiBuDeJie_Imitate/Classes/Other/BaiSiBuDeJie.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie_Imitate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apple.BaiSiBuDeJie-Imitate";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -63,6 +63,10 @@ typedef NS_ENUM(NSUInteger,TopicCellType) {
 @property (assign, nonatomic) NSInteger videotime;
 /**    音频/视频的播放数量    */
 @property (assign, nonatomic) NSInteger playcount;
+/**    视频的播放URL    */
+@property (strong, nonatomic) NSString *videouri;
+/**    音频的播放URL    */
+@property (strong, nonatomic) NSString *voiceuri;
 
 /** 段子类型 */
 @property (nonatomic, assign) NSInteger type;
@@ -75,5 +79,8 @@ typedef NS_ENUM(NSUInteger,TopicCellType) {
 
 /**    是否是长图    */
 @property (assign, nonatomic) BOOL bigPicture;
+
+/**    声音是否正在播放    */
+@property (assign, nonatomic) BOOL voiceIsPlaying;
 
 @end

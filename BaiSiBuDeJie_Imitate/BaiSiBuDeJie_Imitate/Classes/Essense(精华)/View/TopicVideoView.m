@@ -10,11 +10,17 @@
 #import "TopicItem.h"
 #import "SeeBigPictureViewController.h"
 
-@interface TopicVideoView ()
+#import <AVKit/AVKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+
+@interface TopicVideoView () <AVPlayerViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *videoTimeLabel;
+/**    播放视频的控制器    */
+@property (strong, nonatomic) AVPlayerViewController *playerVc;
 
 @end
 
@@ -41,6 +47,54 @@
     
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeBigPictureVc animated:YES completion:nil];
     
+}
+
+#pragma mark - 点击按钮播放视频
+- (IBAction)playButtonClick:(UIButton *)sender {
+    
+    NSString *systemVersion = [UIDevice currentDevice].systemVersion;
+    
+    if ([systemVersion integerValue] < 9) {
+        // iOS9 之前的用法
+        MPMoviePlayerController *mpPlayerVc = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:self.item.videouri]];
+        
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentModalViewController:mpPlayerVc animated:YES];
+        
+    } else {
+        // iOS9 苹果推荐使用的方法
+        AVPlayer *player = [AVPlayer playerWithURL:[NSURL URLWithString:self.item.videouri]];
+        
+        AVPlayerViewController *playerVc = [[AVPlayerViewController alloc] init];
+        
+        playerVc.player = player;
+        // 一点进去就开始播放
+        [playerVc.player play];
+        
+        playerVc.delegate = self;
+        
+        self.playerVc = playerVc;
+        
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:playerVc animated:YES completion:nil];
+        // 监听播放完后关闭播放器
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(dismissVc)
+                                                     name:AVPlayerItemDidPlayToEndTimeNotification
+                                                   object:nil];
+    }
+    
+}
+
+- (void)dealloc {
+    
+    // 移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+}
+
+#pragma mark - 关闭播放器
+- (void)dismissVc {
+    WYFunc;
+    
+    [self.playerVc dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)setItem:(TopicItem *)item {

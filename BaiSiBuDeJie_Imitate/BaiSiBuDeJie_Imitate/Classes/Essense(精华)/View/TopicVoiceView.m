@@ -9,11 +9,21 @@
 #import "TopicVoiceView.h"
 #import "TopicItem.h"
 #import "SeeBigPictureViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface TopicVoiceView ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *voiceTimeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playVoiceButton;
+
+/**    播放语音    */
+@property (strong, nonatomic) AVPlayer *player;
+/**    上一次播放的模型    */
+@property (strong, nonatomic) TopicItem *lastTopicItem;
+/**    上一次点击的播放按钮    */
+@property (strong, nonatomic) UIButton *lastButton;
 
 @end
 
@@ -59,6 +69,65 @@
     [self.imageView setOriginImage:_item.image1 thumbnailImage:_item.image0 placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
     }];
+    
+    [self.playVoiceButton setImage:[UIImage imageNamed:self.item.voiceIsPlaying ? @"playButtonPause":@"playButtonPlay"] forState:UIControlStateNormal];
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        // 初始化player
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:self.item.voiceuri]];
+        
+        AVPlayer *player = [[AVPlayer alloc] initWithPlayerItem:playerItem];
+        
+        self.player = player;
+    });
+}
+
+#pragma mark - 播放语音
+- (IBAction)playVoiceButtonClick:(UIButton *)sender {
+    
+    if (self.lastTopicItem != self.item) { // 点击的不是同一个声音
+        
+        // 暂停播放
+        [self.player pause];
+
+        AVPlayerItem *playItem = [[AVPlayerItem alloc] initWithURL:[NSURL URLWithString:self.item.voiceuri]];
+        
+        [self.player replaceCurrentItemWithPlayerItem:playItem];
+        
+        [self.player play];
+        
+        self.lastTopicItem.voiceIsPlaying = NO;
+        self.item.voiceIsPlaying = YES;
+        
+        [self.lastButton setImage:[UIImage imageNamed:@"playButtonPlay"] forState:UIControlStateNormal];
+
+        [sender setImage:[UIImage imageNamed:@"playButtonPause"] forState:UIControlStateNormal];
+        
+    } else {  // 点击的是同一个声音
+        
+        if (self.item.voiceIsPlaying) {
+            
+            self.item.voiceIsPlaying = NO;
+            // 暂停播放
+            [self.player pause];
+            
+            [sender setImage:[UIImage imageNamed:@"playButtonPlay"] forState:UIControlStateNormal];
+        } else {
+            
+            self.item.voiceIsPlaying = YES;
+            
+            // 开始播放
+            [self.player play];
+            
+            [sender setImage:[UIImage imageNamed:@"playButtonPause"] forState:UIControlStateNormal];
+        }
+    }
+    
+    self.lastTopicItem = self.item;
+    
+    self.lastButton = sender;
+    
 }
 
 @end

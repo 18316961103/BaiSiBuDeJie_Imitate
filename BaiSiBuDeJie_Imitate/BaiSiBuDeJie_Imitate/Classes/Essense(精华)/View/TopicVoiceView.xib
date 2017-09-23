@@ -16,6 +16,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-bq-0p1">
                     <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
                     <state key="highlighted" backgroundImage="playButtonClick"/>
+                    <connections>
+                        <action selector="playVoiceButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="CYS-IH-7VC"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAh-PJ-40B">
                     <color key="backgroundColor" red="0.0095683396464646409" green="0.0095683396464646409" blue="0.0095683396464646409" alpha="0.44045608108108109" colorSpace="calibratedRGB"/>
@@ -48,6 +51,7 @@
             <connections>
                 <outlet property="imageView" destination="NIJ-AP-WhC" id="9tZ-PM-1Wl"/>
                 <outlet property="playCountLabel" destination="MAh-PJ-40B" id="0CD-yw-u4X"/>
+                <outlet property="playVoiceButton" destination="Xeu-bq-0p1" id="uO7-G0-6a1"/>
                 <outlet property="voiceTimeLabel" destination="BSu-sU-uv1" id="4Dw-EL-ym0"/>
             </connections>
             <point key="canvasLocation" x="-0.5" y="289.5"/>

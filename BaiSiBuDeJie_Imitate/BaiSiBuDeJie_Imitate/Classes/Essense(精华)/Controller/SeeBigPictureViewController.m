@@ -33,6 +33,13 @@
     
 }
 
+#pragma mark - 隐藏状态栏
+-(BOOL)prefersStatusBarHidden
+{
+    // 隐藏状态栏
+    return YES;
+}
+
 - (UIScrollView *)scrollView {
     
     if (!_scrollView) {
