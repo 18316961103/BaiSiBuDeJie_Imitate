@@ -23,6 +23,7 @@
 #import <MJExtension/MJExtension.h>
 #import "UIImageView+WebCache.h"
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
 /*****************第三方库**********************/
 
 /*****************屏幕适配**********************/
