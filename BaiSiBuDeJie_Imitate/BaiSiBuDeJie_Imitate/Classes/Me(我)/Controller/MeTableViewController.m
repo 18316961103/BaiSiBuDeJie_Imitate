@@ -12,6 +12,7 @@
 #import "MeSquareItem.h"
 #import <SafariServices/SafariServices.h>
 #import "WebViewController.h"
+#import "LoginViewController.h"
 
 @interface MeTableViewController () <UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -182,6 +183,16 @@ static NSInteger const margin = 1;
     WYFunc;
     
     button.selected = !button.selected;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        LoginViewController *loginVc = [[LoginViewController alloc] init];
+        
+        [self presentViewController:loginVc animated:YES completion:nil];
+    }
     
 }
 
