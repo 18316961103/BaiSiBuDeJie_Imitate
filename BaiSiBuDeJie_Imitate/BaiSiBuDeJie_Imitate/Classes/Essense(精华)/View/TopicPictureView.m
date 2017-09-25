@@ -92,7 +92,7 @@
         self.imageView.contentMode = UIViewContentModeScaleToFill;
         self.imageView.clipsToBounds = NO;
         
-    }
+    }    
 }
 
 

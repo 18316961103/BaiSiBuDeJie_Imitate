@@ -23,6 +23,9 @@ typedef NS_ENUM(NSUInteger,TopicCellType) {
 
 @interface TopicItem : NSObject
 
+/**    帖子ID    */
+@property (strong, nonatomic) NSString *ID;
+
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
 /** 用户的头像 */

@@ -10,6 +10,13 @@
 
 @implementation TopicItem
 
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    
+    return @{
+             @"ID" : @"id"
+             };
+}
+
 - (CGFloat)cellHeight {
     
     // 如果已经有缓存，则直接返回
@@ -29,9 +36,10 @@
     if (self.type != TopicCellTypeWord) {
         
         CGFloat middleH = size.width * self.height / self.width;
+        
         // 如果图片比屏幕高度还长，要限制高度，最多显示250
         if (middleH > kScreenH) {
-           
+            
             middleH = 300;
             
             self.bigPicture = YES;
@@ -39,7 +47,7 @@
         } else {
             self.bigPicture = NO;
         }
-        
+                
         self.middleFrame = CGRectMake(10, _cellHeight, size.width, middleH);
         
         _cellHeight += middleH + 10;

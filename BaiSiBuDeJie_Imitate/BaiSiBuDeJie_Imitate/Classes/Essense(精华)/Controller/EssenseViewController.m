@@ -78,6 +78,9 @@
 
 #pragma mark - 导航条右边按钮的点击
 - (void)randomClick {
+    // 刷新数据
+    [[NSNotificationCenter defaultCenter] postNotificationName:TitleButtonDidRepeatClickNotificationName object:nil];
+
     
     WYFunc;
     

@@ -70,6 +70,12 @@
 		18BED7E71F737C7C00667521 /* TopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7E61F737C7C00667521 /* TopicVideoView.xib */; };
 		18BED7E91F737C8700667521 /* TopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7E81F737C8700667521 /* TopicVoiceView.xib */; };
 		18BED7EB1F737C8F00667521 /* TopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BED7EA1F737C8F00667521 /* TopicPictureView.xib */; };
+		18D287C31F77E8E2004AD444 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D287C11F77E8E2004AD444 /* CommentViewController.m */; };
+		18D287C41F77E8E2004AD444 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D287C21F77E8E2004AD444 /* CommentViewController.xib */; };
+		18D287C71F77F01B004AD444 /* CommentHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D287C61F77F01B004AD444 /* CommentHeaderFooterView.m */; };
+		18D287CA1F77FB0F004AD444 /* CommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D287C91F77FB0F004AD444 /* CommentItem.m */; };
+		18D287CE1F7887BC004AD444 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D287CC1F7887BC004AD444 /* CommentCell.m */; };
+		18D287CF1F7887BC004AD444 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D287CD1F7887BC004AD444 /* CommentCell.xib */; };
 		18D4D30E1F73B8E900AC20B7 /* UIImageView+Download.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4D30D1F73B8E900AC20B7 /* UIImageView+Download.m */; };
 		18D4D3121F74920F00AC20B7 /* SeeBigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4D3101F74920F00AC20B7 /* SeeBigPictureViewController.m */; };
 		18D4D3131F74920F00AC20B7 /* SeeBigPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D4D3111F74920F00AC20B7 /* SeeBigPictureViewController.xib */; };
@@ -183,6 +189,16 @@
 		18BED7E61F737C7C00667521 /* TopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicVideoView.xib; sourceTree = "<group>"; };
 		18BED7E81F737C8700667521 /* TopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicVoiceView.xib; sourceTree = "<group>"; };
 		18BED7EA1F737C8F00667521 /* TopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicPictureView.xib; sourceTree = "<group>"; };
+		18D287C01F77E8E2004AD444 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		18D287C11F77E8E2004AD444 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		18D287C21F77E8E2004AD444 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		18D287C51F77F01B004AD444 /* CommentHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentHeaderFooterView.h; sourceTree = "<group>"; };
+		18D287C61F77F01B004AD444 /* CommentHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentHeaderFooterView.m; sourceTree = "<group>"; };
+		18D287C81F77FB0F004AD444 /* CommentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentItem.h; sourceTree = "<group>"; };
+		18D287C91F77FB0F004AD444 /* CommentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentItem.m; sourceTree = "<group>"; };
+		18D287CB1F7887BC004AD444 /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		18D287CC1F7887BC004AD444 /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		18D287CD1F7887BC004AD444 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		18D4D30C1F73B8E900AC20B7 /* UIImageView+Download.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Download.h"; sourceTree = "<group>"; };
 		18D4D30D1F73B8E900AC20B7 /* UIImageView+Download.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Download.m"; sourceTree = "<group>"; };
 		18D4D30F1F74920F00AC20B7 /* SeeBigPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeBigPictureViewController.h; sourceTree = "<group>"; };
@@ -255,6 +271,7 @@
 				1811B0C01F639D9600099781 /* Setting(设置) */,
 				1811B0A81F62A9EF00099781 /* Main(主要) */,
 				1811B08F1F629C8B00099781 /* Other */,
+				18D287BC1F77E8AB004AD444 /* Comment(评论) */,
 				1811B07F1F629C8B00099781 /* Essense(精华) */,
 				1811B0831F629C8B00099781 /* FriendTrends(关注) */,
 				1811B0871F629C8B00099781 /* Me(我) */,
@@ -687,6 +704,47 @@
 			path = File;
 			sourceTree = "<group>";
 		};
+		18D287BC1F77E8AB004AD444 /* Comment(评论) */ = {
+			isa = PBXGroup;
+			children = (
+				18D287BD1F77E8AB004AD444 /* Controller */,
+				18D287BE1F77E8AB004AD444 /* Model */,
+				18D287BF1F77E8AB004AD444 /* View */,
+			);
+			path = "Comment(评论)";
+			sourceTree = "<group>";
+		};
+		18D287BD1F77E8AB004AD444 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18D287C01F77E8E2004AD444 /* CommentViewController.h */,
+				18D287C11F77E8E2004AD444 /* CommentViewController.m */,
+				18D287C21F77E8E2004AD444 /* CommentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18D287BE1F77E8AB004AD444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18D287C81F77FB0F004AD444 /* CommentItem.h */,
+				18D287C91F77FB0F004AD444 /* CommentItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18D287BF1F77E8AB004AD444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18D287C51F77F01B004AD444 /* CommentHeaderFooterView.h */,
+				18D287C61F77F01B004AD444 /* CommentHeaderFooterView.m */,
+				18D287CB1F7887BC004AD444 /* CommentCell.h */,
+				18D287CC1F7887BC004AD444 /* CommentCell.m */,
+				18D287CD1F7887BC004AD444 /* CommentCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		771BD41971F5386C0DA1EB61 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -777,7 +835,9 @@
 				1885A3E01F63F74B00FF08DD /* LaunchImage-700@2x.png in Resources */,
 				1885A3E21F63F74B00FF08DD /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				18BED7E91F737C8700667521 /* TopicVoiceView.xib in Resources */,
+				18D287CF1F7887BC004AD444 /* CommentCell.xib in Resources */,
 				1885A3DE1F63F74B00FF08DD /* LaunchImage-568h@2x.png in Resources */,
+				18D287C41F77E8E2004AD444 /* CommentViewController.xib in Resources */,
 				1885A4101F64F32700FF08DD /* LoginView.xib in Resources */,
 				1885A3E11F63F74B00FF08DD /* LaunchImage-800-667h@2x.png in Resources */,
 				1885A4001F64174800FF08DD /* SubTagCell.xib in Resources */,
@@ -855,7 +915,9 @@
 				1885A3F11F63F7A100FF08DD /* AdViewController.m in Sources */,
 				1885A3F81F6411C900FF08DD /* SubTagTableViewController.m in Sources */,
 				1811B0BC1F63936800099781 /* UIBarButtonItem+Item.m in Sources */,
+				18D287C71F77F01B004AD444 /* CommentHeaderFooterView.m in Sources */,
 				18BED7DF1F737C5000667521 /* TopicVideoView.m in Sources */,
+				18D287C31F77E8E2004AD444 /* CommentViewController.m in Sources */,
 				1885A4131F652FFE00FF08DD /* FastLoginView.m in Sources */,
 				1885A40A1F64EACB00FF08DD /* LoginViewController.m in Sources */,
 				18BED7C81F6F646000667521 /* WYConst.m in Sources */,
@@ -883,7 +945,9 @@
 				1811B0AE1F62AA4700099781 /* TabBarController.m in Sources */,
 				1885A4181F65361500FF08DD /* FastLoginBtn.m in Sources */,
 				18BED7CB1F713D6A00667521 /* TopicItem.m in Sources */,
+				18D287CE1F7887BC004AD444 /* CommentCell.m in Sources */,
 				18BED7C51F6F5DC500667521 /* WordTableViewController.m in Sources */,
+				18D287CA1F77FB0F004AD444 /* CommentItem.m in Sources */,
 				18BED7B61F6E9ECB00667521 /* WYFileTool.m in Sources */,
 				1811B09E1F629EAB00099781 /* FriendTrendsViewController.m in Sources */,
 				18D4D30E1F73B8E900AC20B7 /* UIImageView+Download.m in Sources */,

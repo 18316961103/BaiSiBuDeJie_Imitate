@@ -8,6 +8,7 @@
 
 #import "TopicTableViewController.h"
 #import "TopicCell.h"
+#import "CommentViewController.h"
 
 @interface TopicTableViewController ()
 
@@ -82,7 +83,7 @@ static NSString *const TopicCellID = @"TopicCellID";
     WYFunc;
     
     // 刷新数据
-    [self refreshData];
+    [self.tableView.mj_header beginRefreshing];
     
 }
 
@@ -215,6 +216,18 @@ static NSString *const TopicCellID = @"TopicCellID";
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TopicItem *item = self.topicData[indexPath.row];
+
+    CommentViewController *commentVc = [[CommentViewController alloc] init];
+    
+    commentVc.topicItem = item;
+    
+    [self.navigationController pushViewController:commentVc animated:YES];
+    
 }
 
 
