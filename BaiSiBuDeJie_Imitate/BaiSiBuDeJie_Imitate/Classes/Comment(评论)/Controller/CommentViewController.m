@@ -11,6 +11,7 @@
 #import "TopicCell.h"
 #import "CommentItem.h"
 #import "CommentCell.h"
+#import "LoginViewController.h"
 
 @interface CommentViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -57,6 +58,13 @@ static NSString *const headerId = @"headerId";
         [self.view layoutIfNeeded];
         
     } completion:nil];
+    
+}
+- (IBAction)gotoLogin:(UIButton *)sender {
+    
+    LoginViewController *loginVc = [[LoginViewController alloc] init];
+    
+    [self presentViewController:loginVc animated:YES completion:nil];
     
 }
 

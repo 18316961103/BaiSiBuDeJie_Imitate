@@ -27,6 +27,9 @@
                             </constraints>
                             <state key="normal" image="comment-bar-voice"/>
                             <state key="highlighted" image="comment-bar-voice-click"/>
+                            <connections>
+                                <action selector="gotoLogin:" destination="-1" eventType="touchUpInside" id="wRU-x4-ZFp"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghS-9w-1WZ">
                             <constraints>
@@ -34,6 +37,9 @@
                             </constraints>
                             <state key="normal" image="comment_bar_at_icon"/>
                             <state key="highlighted" image="comment_bar_at_icon_click"/>
+                            <connections>
+                                <action selector="gotoLogin:" destination="-1" eventType="touchUpInside" id="x5I-4A-mF7"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="写评论" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wl4-Hi-14p">
                             <nil key="textColor"/>
